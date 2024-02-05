@@ -1,0 +1,10 @@
+# https://www.codechef.com/problems/ADVITIYA2
+
+n=int(input())
+for i in range(n):
+    votes=input().split()
+    votes=[int(v) for v in votes]
+    if votes.count(1)>=4:
+        print('YES')
+    else:
+        print('NO')
