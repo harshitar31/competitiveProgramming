@@ -1,0 +1,4 @@
+#  https://www.codechef.com/problems/START01
+
+N=eval(input())
+print(N)
