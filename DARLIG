@@ -1,0 +1,19 @@
+# https://www.codechef.com/problems/DARLIG
+
+n=int(input())
+for i in range(n):
+    n,k=map(int,input().split())
+    if n==0:
+        if k==1:
+            print('On')
+        else:
+            print('Off')
+    elif k==0:
+        if n%4==0:
+            print('Off')
+        else:
+            print('On')
+    elif k==1 and n%4==0:
+        print('On')
+    else:
+        print('Ambiguous')
