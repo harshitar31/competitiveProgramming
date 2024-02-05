@@ -1,0 +1,9 @@
+# https://www.codechef.com/problems/SUBSCRIBE_
+
+n=int(input())
+for i in range(n):
+    N,X=map(int,input().split())
+    if N%6>0:
+        print(((N//6)+1)*X)
+    else:
+        print((N//6)*X)
