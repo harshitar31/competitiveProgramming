@@ -1,0 +1,19 @@
+# https://www.codechef.com/problems/ADVITIYA3
+
+n=int(input())
+for i in range(n):
+    ui=input().split()
+    jars,kids=[int(u) for u in ui]
+    cookie=input().split()
+    cookies=dict()
+    
+    for c in range(len(cookie)):
+        if int(cookie[c]) >= kids:
+            cookies[c]=int(cookie[c])%kids
+        else:
+            cookies[c]=-1
+            
+    if list(cookies.values()).count(-1)==jars:
+        print(-1)
+    else:
+        print(min([k for k in cookies.values() if k!=-1]))
