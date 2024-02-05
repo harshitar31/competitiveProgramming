@@ -1,0 +1,6 @@
+# https://www.codechef.com/problems/BADMINTON
+
+n=int(input())
+for i in range(n):
+    runs=int(input())
+    print((runs//2)+1)
