@@ -1,0 +1,6 @@
+# https://www.codechef.com/problems/COUGAME
+
+n=int(input())
+for i in range(n):
+    g,b=map(int,input().split())
+    print(b-g)
