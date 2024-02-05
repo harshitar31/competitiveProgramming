@@ -1,0 +1,7 @@
+# https://www.codechef.com/problems/ADVITIYA1
+
+n=int(input())
+if n in [16,17,18]:
+    print("ADVITIYA")
+else:
+    print("WAITING FOR ADVITIYA")
