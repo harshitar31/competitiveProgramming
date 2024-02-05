@@ -1,0 +1,12 @@
+# https://www.codechef.com/problems/COOK82A
+
+n=int(input())
+for i in range(n):
+    d=dict()
+    for k in range(4):
+        team,score=input().split()
+        d[team]=int(score)
+    if d['RealMadrid']<d['Malaga'] and d['Barcelona']>d['Eibar']:
+        print('Barcelona')
+    else:
+        print('RealMadrid')
