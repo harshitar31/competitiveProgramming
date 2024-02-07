@@ -1,0 +1,14 @@
+# https://www.codechef.com/START120D/problems/VAL142
+
+t=int(input())
+
+for i in range(t):
+    x=int(input())
+    n=[1]
+    for k in range(6):
+        n.append(n[k]*2)
+    if sum(n)<=x:
+        print('YES')
+    else:
+        print('NO')
+        
