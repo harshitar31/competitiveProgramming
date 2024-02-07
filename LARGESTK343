@@ -1,0 +1,11 @@
+# https://www.codechef.com/problems/LARGESTK343
+
+t=int(input())
+for i in range(t):
+    o,i=map(int,input().split())
+    if i>o:
+        print(i//(o-1))
+    elif o-1>i:
+        print(0)
+    else:
+        print(1)
