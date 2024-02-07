@@ -1,0 +1,7 @@
+# https://www.codechef.com/START120D/problems/VAL114
+
+n=int(input())
+if n==121:
+    print('Likely')
+else:
+    print('Unlikely')
