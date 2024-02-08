@@ -1,0 +1,15 @@
+# https://www.codechef.com/problems/DIET
+
+testcases=int(input())
+for testcase in range(testcases):
+    N,K=map(int,input().split())
+    l=list(map(int,input().split()))
+    for i in range(N):
+        if l[i]<K:
+            print('NO',i+1)
+            break
+        else:
+            if i!=len(l)-1:
+                l[i+1]+=l[i]-K
+    else:
+        print('YES')
