@@ -1,0 +1,13 @@
+# https://www.codechef.com/problems/ATM2
+
+testcases=int(input())
+for testcase in range(testcases):
+    n,k=map(int,input().split())
+    u=list(map(int, input().split()))
+    for i in u:
+        if i<=k:
+            print(1,end='')
+            k-=i
+        else:
+            print(0,end='')
+    print()
