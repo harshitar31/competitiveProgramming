@@ -1,0 +1,26 @@
+# https://www.codechef.com/problems/CRICRANK
+
+testcases=int(input())
+players=[]
+for testcase in range(testcases):
+    for i in range(2):
+        l=list(map(int,input().split()))
+        players.append(l)
+    a,b=0,0
+    if players[0][0]>players[1][0]:
+        a+=1
+    else:
+        b+=1
+    if players[0][1]>players[1][1]:
+        a+=1
+    else:
+        b+=1
+    if players[0][2]>players[1][2]:
+        a+=1
+    else:
+        b+=1
+    if a>b:
+        print('A')
+    else:
+        print('B')
+    players=[]
