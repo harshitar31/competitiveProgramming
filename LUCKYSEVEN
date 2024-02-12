@@ -1,0 +1,4 @@
+# https://www.codechef.com/problems/LUCKYSEVEN
+
+s=input()
+print(s[6])
