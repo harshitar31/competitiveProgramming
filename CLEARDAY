@@ -1,0 +1,4 @@
+# https://www.codechef.com/problems/CLEARDAY
+
+x,y=map(int,input().split())
+print(7-x-y)
