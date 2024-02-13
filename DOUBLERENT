@@ -1,0 +1,4 @@
+# https://www.codechef.com/problems/DOUBLERENT
+
+rent=int(input())
+print(rent*2)
