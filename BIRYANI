@@ -1,0 +1,6 @@
+# https://www.codechef.com/problems/BIRYANI
+
+testcases=int(input())
+for testcase in range(testcases):
+    x,y=map(int, input().split())
+    print(x*y)
