@@ -1,0 +1,9 @@
+# https://www.codechef.com/problems/TOP10
+
+testcases=int(input())
+for testcase in range(testcases):
+    rank=int(input())
+    if rank<=10:
+        print('YES')
+    else:
+        print('NO')
