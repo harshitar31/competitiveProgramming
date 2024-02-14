@@ -1,0 +1,6 @@
+# https://www.codechef.com/problems/DETSCORE
+
+testcases=int(input())
+for testcase in range(testcases):
+    x,n=map(int,input().split())
+    print(int((x/10)*n))
