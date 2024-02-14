@@ -1,0 +1,9 @@
+# https://www.codechef.com/problems/BURGERS
+
+testcases=int(input())
+for testcase in range(testcases):
+    x,y=map(int,input().split())
+    if x>=y:
+        print(y)
+    else:
+        print(x)
