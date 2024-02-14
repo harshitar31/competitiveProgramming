@@ -1,0 +1,40 @@
+# https://www.codechef.com/problems/CAESARLITE
+
+testcases=int(input())
+l='abcdefghijklmnopqrstuvwxyz'.upper()
+for testcase in range(testcases):
+    n=int(input())
+    a=input()
+    b=input()
+    for i in range(n):
+        if (l.index(a[i])>l.index(b[i])):
+            c=0
+            in1=l.index(a[i])
+            in2=l.index(b[i])
+
+            while True:
+                if in1==in2:
+                    break
+                else:
+                    if in1+3>25:
+                        in1=(in1+3)%26
+                    else:
+                        in1+=3
+                    c+=1
+            print(c,end=' ')
+        else:
+            c=0
+            in1=l.index(a[i])
+            in2=l.index(b[i])
+
+            while True:
+                if in1==in2:
+                    break
+                else:
+                    if in1+3>25:
+                        in1=(in1+3)%26
+                    else:
+                        in1+=3
+                    c+=1
+            print(c,end=' ')
+    print()
