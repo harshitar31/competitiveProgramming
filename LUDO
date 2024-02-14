@@ -1,0 +1,9 @@
+# https://www.codechef.com/problems/LUDO
+
+testcases=int(input())
+for testcase in range(testcases):
+    x=int(input())
+    if x==6:
+        print('YES')
+    else:
+        print('NO')
