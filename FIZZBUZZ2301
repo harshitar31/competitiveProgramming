@@ -1,0 +1,23 @@
+# https://www.codechef.com/problems/FIZZBUZZ2301
+
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner input = new Scanner(System.in);
+		int d = input.nextInt();
+		int r = input.nextInt();
+		int k = input.nextInt();
+		if ((d>r) & (d>k)) {
+		    System.out.println("YES");
+		}
+		else {
+		    System.out.println("NO");
+		}
+
+	}
+}
