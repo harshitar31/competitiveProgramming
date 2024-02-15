@@ -1,0 +1,21 @@
+# https://www.codechef.com/problems/ERROR404
+
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner input = new Scanner(System.in);
+		int num = input.nextInt();
+		if (num==404){
+		    System.out.println("NOT FOUND");
+		}
+		else {
+		    System.out.println("FOUND");
+		}
+
+	}
+}
