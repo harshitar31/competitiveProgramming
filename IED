@@ -1,0 +1,25 @@
+# https://www.codechef.com/problems/IED
+
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner input = new Scanner(System.in);
+		int a = input.nextInt();
+		int b = input.nextInt();
+		int c = input.nextInt();
+		if ((a*c) > (b*c)){
+		    int result = a*c;
+		    System.out.println(result);
+		}
+		else {
+		    int result = b*c;
+		    System.out.println(result);
+		}
+		
+	}
+}
