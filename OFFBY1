@@ -1,0 +1,19 @@
+# https://www.codechef.com/problems/OFFBY1
+
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner input = new Scanner(System.in);
+		int num1 = input.nextInt();
+		int num2 = input.nextInt();
+		int num = num1+num2;
+		String n = String.valueOf(num);
+		System.out.println(n+"1");
+
+	}
+}
