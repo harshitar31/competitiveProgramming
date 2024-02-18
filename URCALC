@@ -1,0 +1,13 @@
+# https://www.codechef.com/problems/URCALC
+
+a=eval(input())
+b=eval(input())
+c=input()
+if c=='+':
+    print(a+b)
+elif c=='-':
+    print(a-b)
+elif c=='/':
+    print(a/b)
+if c=='*':
+    print(a*b)
