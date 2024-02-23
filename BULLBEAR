@@ -1,0 +1,28 @@
+# https://www.codechef.com/problems/BULLBEAR
+
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+	    Scanner input = new Scanner(System.in);
+	    int testcases=input.nextInt();
+	    for (int i=0; i<testcases; i++) {
+	        int x = input.nextInt();
+	        int y = input.nextInt();
+	        if (x>y) {
+	            System.out.println("LOSS");
+	        }
+	        else if (x<y) {
+	            System.out.println("PROFIT");
+	        }
+	        else {
+	            System.out.println("NEUTRAL");
+	        }
+	        
+	    }
+	}
+}
