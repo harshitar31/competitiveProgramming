@@ -1,0 +1,13 @@
+# https://www.codechef.com/problems/MATCH_ALK
+
+testcases=int(input())
+for testcase in range(testcases):
+    maxi=0
+    maxid=-1
+    for i in range(22):
+        s,w=map(int,input().split())
+        score=s + w*20
+        if score>maxi:
+            maxi=score
+            maxid=i+1
+    print(maxid)
