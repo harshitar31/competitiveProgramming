@@ -1,0 +1,6 @@
+# https://www.codechef.com/problems/HEALSE
+
+hours=int(input())
+if hours>8:
+    print('MORE')
+elif hours
