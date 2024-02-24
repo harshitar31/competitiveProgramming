@@ -1,0 +1,15 @@
+# https://www.codechef.com/problems/PBREV
+
+testcases=int(input())
+for testcase in range(testcases):
+    n=int(input())
+    flag=True
+    l=input().split()
+    for i in range(n):
+        if int(l[i])<=4:
+            flag=False
+        
+    if flag:
+        print('YES')
+    else:
+        print("NO")
