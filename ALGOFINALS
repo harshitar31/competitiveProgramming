@@ -1,0 +1,7 @@
+# https://www.codechef.com/START123D/problems/ALGOFINALS
+
+n=int(input())
+if n==17:
+    print('YAY')
+else:
+    print('NO')
