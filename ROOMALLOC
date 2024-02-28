@@ -1,0 +1,14 @@
+# https://www.codechef.com/START123D/problems/ROOMALLOC
+
+testcases=int(input())
+for testcase in range(testcases):
+    n=int(input())
+    rooms=0
+    l=input().split()
+    l=[int(k) for k in l]
+    for i in l:
+        if i%2==0:
+            rooms+=(i//2)
+        else:
+            rooms+=(i//2)+1
+    print(rooms)
