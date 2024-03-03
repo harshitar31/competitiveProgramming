@@ -1,0 +1,32 @@
+# https://www.codechef.com/problems/MAXDIFFMIN
+
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+	    Scanner input = new Scanner(System.in);
+	    int testcases = input.nextInt();
+	    for (int i=0; i<testcases; i++) {
+	        int a = input.nextInt();
+	        int b = input.nextInt();
+	        int c = input.nextInt();
+	        int[] nums = {a,b,c};
+	        int maxi=nums[0];
+	        int mini=nums[0];
+	        for (int j=0; j<nums.length; j++) {
+	            if (nums[j]>maxi) {
+	                maxi=nums[j];
+	            }
+	            if (nums[j]<mini) {
+	                mini=nums[j];
+	            }
+	        }
+	        System.out.println(maxi-mini);
+	        
+	    }
+	}
+}
