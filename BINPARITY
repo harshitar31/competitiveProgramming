@@ -1,0 +1,40 @@
+# https://www.codechef.com/START124D/problems/BINPARITY
+
+# I did the code in python and converted it to java using online converter because python was slow
+
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner scanner = new Scanner(System.in);
+        int testcases = scanner.nextInt();
+        for (int testcase = 0; testcase < testcases; testcase++) {
+            int n = scanner.nextInt();
+            String s = binary(n);
+            int summ = 0;
+            for (int i = 0; i < s.length(); i++) {
+                summ += Integer.parseInt(String.valueOf(s.charAt(i)));
+            }
+            if (summ % 2 == 0) {
+                System.out.println("EVEN");
+            } else {
+                System.out.println("ODD");
+            }
+        }
+    }
+
+    public static String binary(int num) {
+        int c = 0;
+        String s = "";
+        while (num >= 1) {
+            s += String.valueOf(num % 2);
+            num = num / 2;
+        }
+        return new StringBuilder(s).reverse().toString();
+    }
+}
+
