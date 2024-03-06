@@ -1,0 +1,7 @@
+# https://www.codechef.com/START124D/problems/MANGOLASSI
+
+temp=int(input())
+if temp>35:
+    print("YES")
+else:
+    print("NO")
