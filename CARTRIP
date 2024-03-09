@@ -1,0 +1,25 @@
+# https://www.codechef.com/problems/CARTRIP
+
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+	    Scanner input = new Scanner(System.in);
+	    int testcases=input.nextInt();
+	    for (int i=0; i<testcases; i++) {
+	        int x = input.nextInt();
+            if (x>300) {
+                System.out.println(x*10);
+            }
+            else {
+                System.out.println(3000);
+            }
+
+	    }
+
+	}
+}
