@@ -1,0 +1,22 @@
+# https://www.codechef.com/problems/VIDEOWORTH
+
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+
+class Codechef
+{
+	public static void main (String[] args)
+	{
+		Scanner input = new Scanner(System.in);
+		int testcases = input.nextInt();
+		for (int i=0; i<testcases; i++) {
+		    int x = input.nextInt();
+		    System.out.println(x*24000);
+
+		}
+
+		
+	}
+}
