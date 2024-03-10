@@ -1,0 +1,17 @@
+# https://www.codechef.com/problems/EMAILREM
+
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+
+class Codechef
+{
+	public static void main (String[] args)
+	{
+		Scanner input = new Scanner(System.in);
+		int n = input.nextInt();
+		int u = input.nextInt();
+		System.out.println(n-u);
+	}
+}
