@@ -1,0 +1,27 @@
+# https://www.codechef.com/START126D/problems/DICEGAME3
+
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner input = new Scanner(System.in);
+		int testcases = input.nextInt();
+		for (int i=0; i<testcases; i++) {
+		    int r = input.nextInt();
+		    double score=0;
+		    if (r%2==0) {
+		        score=((r/2)*12) + (r/2);
+		    }
+		    else {
+		         score=(Math.floor(r/2)*12) + Math.floor((r/2)) + 6;
+		    }
+		    int s = (int) score;
+		    System.out.println(s);
+		}
+
+	}
+}
