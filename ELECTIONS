@@ -1,0 +1,12 @@
+# https://www.codechef.com/problems/ELECTIONS
+
+testcases=int(input())
+parties=['A','B','C']
+for testcase in range(testcases):
+    votes=list(map(int,input().split()))
+    for i in range(3):
+        if votes[i]>50:
+            print(parties[i])
+            break
+    else:
+        print('NOTA')
