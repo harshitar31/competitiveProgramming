@@ -1,0 +1,27 @@
+# https://www.codechef.com/problems/CANDY123
+
+for testcase in range(int(input())):
+    a,b=map(int,input().split())
+    lt=1
+    bt=2
+    lc=3
+    bc=4
+    if lt>a:
+        print('Bob')
+    elif bt>b:
+        print('Limak')
+    else:
+        while True:
+            lt+=lc
+            bt+=bc
+            lc+=2
+            bc+=2
+            if lt>a:
+                print('Bob')
+                break
+            if bt>b:
+                print('Limak')
+                break
+
+            
+            
