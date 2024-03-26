@@ -1,0 +1,11 @@
+# https://www.codechef.com/problems/ATTENDU
+
+for testcase in range(int(input())):
+    n=int(input())
+    att=input()
+    p=att.count('1')
+    ma=(p+(120-n))/120
+    if ma>=0.75:
+        print('YES')
+    else:
+        print('NO')
