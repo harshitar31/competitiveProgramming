@@ -1,0 +1,9 @@
+# https://www.codechef.com/START127D/problems/BBWIN
+
+import math
+for testcase in range(int(input())):
+    a,b=map(int,input().split())
+    if (a-b)>=10:
+        print(0)
+    else:
+        print(math.ceil((10+b-a)/3))
