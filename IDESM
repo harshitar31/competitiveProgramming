@@ -1,0 +1,7 @@
+# https://www.codechef.com/START127D/problems/IDESM
+
+d=int(input())
+if d==15:
+    print("YES")
+else:
+    print("NO")
