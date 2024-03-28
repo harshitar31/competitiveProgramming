@@ -1,0 +1,10 @@
+# https://www.codechef.com/problems/DOREWARD
+
+for testcase in range(int(input())):
+    d=int(input())
+    if d<=3:
+        print('BRONZE')
+    elif d<=6:
+        print('SILVER')
+    else:
+        print('GOLD')
