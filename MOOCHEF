@@ -1,0 +1,40 @@
+# https://www.codechef.com/START128D/problems/MOOCHEF
+
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner input = new Scanner(System.in);
+		int testcases = input.nextInt();
+		for (int testcase = 0; testcase<testcases; testcase++) {
+		    int n = input.nextInt();
+		    int l = input.nextInt();
+		    int r = input.nextInt();
+		    int [] arr = new int[n];
+		    int happiness=0, maxh=0, minh=0;
+		    for (int i=0; i<n; i++) {
+		        arr[i]=input.nextInt();
+		    }
+		    for (int k=0; k<n; k++) {
+		        if ((arr[k]>=l) && (arr[k]<=r)) {
+		            happiness+=1;
+		        }
+		        else {
+		            happiness-=1;
+		        }
+		        if (happiness>maxh) {
+		            maxh=happiness;
+		        }
+		        if (happiness<minh) {
+		            minh=happiness;
+		        }
+		    }
+		    System.out.println(maxh + " " + minh);
+		}
+
+	}
+}
