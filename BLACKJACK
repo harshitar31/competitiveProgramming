@@ -1,0 +1,26 @@
+# https://www.codechef.com/problems/BLACKJACK
+
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+	    Scanner input = new Scanner(System.in);
+	    int testcases = input.nextInt();
+	    for (int testcase=0; testcase<testcases; testcase++) {
+	        int a = input.nextInt();
+	        int b = input.nextInt();
+	        int c = -1;
+	        for (int i=1; i<11; i++) {
+	            if ((a+b+i)%21==0) {
+	                c=i;
+	            }
+	        }
+	        System.out.println(c);
+	    }
+
+	}
+}
