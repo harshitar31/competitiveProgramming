@@ -1,0 +1,7 @@
+# https://www.codechef.com/problems/VOWELTB
+
+c=input()
+if c in 'AEIOU':
+    print('Vowel')
+else:
+    print('Consonant')
