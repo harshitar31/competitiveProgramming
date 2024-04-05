@@ -1,0 +1,18 @@
+# https://codeforces.com/contest/80/problem/A
+
+n,m=map(int,input().split())
+num=n+1
+ans=0
+while num>n:
+    c=0
+    for i in range(2,int((num)**0.5)+1):
+        if num%i==0:
+            c+=1
+    if c==0:
+        ans=num
+        break
+    num+=1
+if ans==m:
+    print('YES')
+else:
+    print('NO')
