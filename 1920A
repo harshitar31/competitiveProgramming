@@ -1,0 +1,38 @@
+# https://codeforces.com/contest/1920/problem/A
+
+def binary_search(arr, target):
+  low = 0
+  high = len(arr) - 1
+  while low <= high:
+    mid = (low + high) // 2
+    if arr[mid] == target:
+      return True
+    elif arr[mid] < target:
+      low = mid + 1
+    else:
+      high = mid - 1
+  return False
+ 
+for testcase in range(int(input())):
+    n=int(input())
+    con=[]
+    for i in range(n):
+        con.append([0,0])
+        con[i][0],con[i][1]=map(int, input().split())
+    a=[];b=[];c=[]
+    for co in con:
+            if co[0]==1:
+                a.append(co[1])
+            elif co[0]==2:
+                b.append(co[1])
+            else:
+                c.append(co[1])
+        
+    mini=max(a)
+    maxi=min(b)
+    count=0
+    lv1=len(range(mini,maxi+1))
+    for num in c:
+        if binary_search(range(mini,maxi+1),num):
+            count+=1
+    print(lv1-count)
