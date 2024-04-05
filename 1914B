@@ -1,0 +1,26 @@
+# https://codeforces.com/contest/1914/problem/B
+
+testcases=int(input())
+for testcase in range(testcases):
+    n,k=map(int,input().split())
+    l=list(range(1,n+1))
+ 
+    if k==0:
+        for i in l[::-1]:
+            print(i,end=' ')
+        print()
+ 
+    elif k==n-1:
+        for i in l:
+            print(i,end=' ')
+        print()
+ 
+    else:
+        ex=l[-k:]
+        l=l[:-k]
+        l=l[::-1]
+        for i in l:
+            print(i,end=' ')
+        for i in ex:
+            print(i, end=' ')
+        print()
