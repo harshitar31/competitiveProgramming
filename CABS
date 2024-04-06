@@ -1,0 +1,10 @@
+# https://www.codechef.com/problems/CABS
+
+for testcase in range(int(input())):
+    x,y=map(int,input().split())
+    if x<y:
+        print('FIRST')
+    elif x==y:
+        print('ANY')
+    else:
+        print("SECOND")
