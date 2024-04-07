@@ -1,0 +1,13 @@
+# https://codeforces.com/problemset/problem/4/A
+
+w=int(input())
+for i in range(2,w,2):
+    for j in range(2,w,2):
+        if i+j==w:
+            print('YES')
+            break
+    else:
+        continue
+    break
+else:
+    print('NO')
