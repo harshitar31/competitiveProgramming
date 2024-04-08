@@ -1,0 +1,13 @@
+# https://codeforces.com/contest/268/problem/A
+
+n = int(input())
+teamUni=[]
+for i in range(n):
+    teamUni.append([0,0])
+    teamUni[i][0],teamUni[i][1]=map(int,input().split())
+count=0
+for j in range(len(teamUni)):
+    for k in range(len(teamUni)):
+        if j!=k and teamUni[j][1]==teamUni[k][0]:
+            count+=1
+print(count)
