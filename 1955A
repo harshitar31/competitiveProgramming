@@ -1,0 +1,10 @@
+# https://codeforces.com/contest/1955/problem/A
+
+for testcase in range(int(input())):
+    n,a,b=map(int,input().split())
+    o1 = n*a
+    o2 = (n//2)*b + (n%2)*a
+    if o1>o2:
+        print(int(o2))
+    else:
+        print(o1)
