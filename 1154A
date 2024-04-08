@@ -1,0 +1,12 @@
+# https://codeforces.com/contest/1154/problem/A
+
+l=input().split()
+l=[int(num) for num in l]
+abc=max(l)
+l.remove(abc)
+ab=max(l)
+l.remove(ab)
+ca=max(l)
+l.remove(ca)
+bc=max(l)
+print(abc-ab,abc-ca,abc-bc,sep=" ")
