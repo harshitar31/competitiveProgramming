@@ -8,14 +8,8 @@ for testcase in range(int(input())):
         if x[i]-x[i-1]<=2:
             c+=1 
         else:
-            if c>0:
-                l.append(c)
+            l.append(c)
             c=1
     else:
-        if c>0:
-            l.append(c)
-        if l==[]:
-            l.append(1)
+        l.append(c)
     print(min(l),max(l),sep=" ")
-            
-    
