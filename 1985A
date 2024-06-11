@@ -1,0 +1,6 @@
+# https://codeforces.com/contest/1985/problem/A
+
+for testcase in range(int(input())):
+    a,b=map(str,input().split())
+    print(f'{b[0]}{a[1:]} {a[0]}{b[1:]}')  
+    
