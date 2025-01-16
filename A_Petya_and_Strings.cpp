@@ -1,3 +1,5 @@
+//https://codeforces.com/problemset/problem/112/A
+
 #include <iostream>
 #include <cctype>
 
